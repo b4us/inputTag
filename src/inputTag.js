@@ -127,7 +127,7 @@
             spanHtml(value) {
                 return '<span class="fairy-tag fairy-anim-fadein ' + this.randomColor() + '">' +
                     '<span>' + value + '</span>' +
-                    (this.options.permanentData.includes(value) ? '' : '<a href="#" title="删除标签">&times;</a>') +
+                    (this.options.permanentData.includes(value) ? '' : '<a href="#" onclick="return false;" title="删除标签">&times;</a>') +
                     '</span>';
             }
 
